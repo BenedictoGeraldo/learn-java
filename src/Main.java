@@ -1,8 +1,9 @@
 public class Main {
-    public static void main(String[] args) {
+    static void WelcomeMessage () {
+        System.out.println("If you get this dan you did it");
+    }
 
-        String nama = "Benedicto Geraldo";
-
-        System.out.println("Perkenalkan nama saya: " + nama);
+    public static void main(String[] args){
+        WelcomeMessage();
     }
 }
