@@ -1,9 +1,13 @@
 public class Main {
-    static void WelcomeMessage () {
-        System.out.println("If you get this dan you did it");
-    }
-
     public static void main(String[] args){
-        WelcomeMessage();
+        int angka = 1;
+
+        if (angka >= 2) {
+            System.out.println("bigger");
+        } else if (angka == 1){
+            System.out.println("matched");
+        } else {
+            System.out.println("nah");
+        }
     }
 }
