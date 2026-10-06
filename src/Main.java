@@ -1,10 +1,8 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        String pekerjaan = "Mahasiswa";
+        String nama = "Benedicto Geraldo";
 
-        System.out.println("Saya adalah seorang " + pekerjaan);
+        System.out.println("Perkenalkan nama saya: " + nama);
     }
 }
