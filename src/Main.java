@@ -1,13 +1,12 @@
-public class Main {
-    public static void main(String[] args){
-        int angka = 1;
+import java.util.Arrays;
 
-        if (angka >= 2) {
-            System.out.println("bigger");
-        } else if (angka == 1){
-            System.out.println("matched");
-        } else {
-            System.out.println("nah");
-        }
+public class Main {
+    static void Makanan () {
+        String[] buah = {"apel", "jeruk", "manggis"};
+        System.out.println(Arrays.toString(buah));
+    }
+
+    public static void main (String[] args) {
+        Makanan();
     }
 }
