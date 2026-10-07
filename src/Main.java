@@ -1,12 +1,9 @@
-import java.util.Arrays;
-
 public class Main {
-    static void Makanan () {
-        String[] buah = {"apel", "jeruk", "manggis"};
-        System.out.println(Arrays.toString(buah));
-    }
+    public static void main(String[] args){
+        String[] Furniture = {"sofa", "meja", "kasur", "keramik"};
 
-    public static void main (String[] args) {
-        Makanan();
+        for (int i = 0; i < Furniture.length; i++){
+            System.out.println(Furniture[i]);
+        }
     }
 }
