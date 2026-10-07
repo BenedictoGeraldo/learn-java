@@ -1,9 +1,10 @@
 public class Main {
-    public static void main(String[] args){
-        String[] Furniture = {"sofa", "meja", "kasur", "keramik"};
+    public static void main(String[] args) {
+        int i = 7;
 
-        for (int i = 0; i < Furniture.length; i++){
-            System.out.println(Furniture[i]);
+        while (i >= 0) {
+            System.out.println(i);
+            i--;
         }
     }
 }
