@@ -1,11 +1,9 @@
-public class Main{
-    public static void main (String[] args){
-        int i = 0;
+public class Main {
+    public static void main (String[] args) {
+        System.out.println("belajar looping");
 
-        do {
-            System.out.println("running dia dulu ni " + i);
-            i++;
+        for (int i = 1; i<5; i++){
+            System.out.println("ini adalah perulangan ke- " + i);
         }
-        while (i <= 5);
     }
 }
