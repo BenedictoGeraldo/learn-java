@@ -1,20 +1,18 @@
-class Keluarga {
-    String ayah;
-    String ibu;
-    String anak;
-
-    void bersama() {
-        System.out.println("Ini adalah silsilah keluarga saya yang terdiri dari " + ayah + ibu + anak);
-    }
-}
-
 public class Main {
-    public static void main (String[] args){
-        Keluarga keluarga = new Keluarga();
-        keluarga.ayah = "John, ";
-        keluarga.ibu = "Marie, ";
-        keluarga.anak = "Edward";
+    String merk;
+    String warna;
+    int harga;
 
-        keluarga.bersama();
+    void brumbrum() {
+        System.out.println("Merk " + merk + "\nWarna " + warna + "\nHarga " + harga);
+    }
+
+    public static void main (String[] args){
+        Main a = new Main();
+        a.merk = "honda";
+        a.warna = "biru";
+        a.harga = 2000000000;
+
+        a.brumbrum();
     }
 }
