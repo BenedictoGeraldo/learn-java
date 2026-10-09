@@ -12,6 +12,8 @@ public class Main {
             cekUmur(90);
         } catch (ArithmeticException e) {
             System.out.println("Terjadi error: " + e.getMessage());
+        } finally {
+            System.out.println("===================");
         }
     }
 }
