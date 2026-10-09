@@ -1,10 +1,10 @@
-abstract class Tombol {
-    abstract void tekan();
+interface Tombol {
+    void tekan();
 }
 
-class TombolLompat extends Tombol {
+class TombolLompat implements Tombol {
     @Override
-    void tekan() {
+    public void tekan() {
         System.out.println("Lompat");
     }
 }
