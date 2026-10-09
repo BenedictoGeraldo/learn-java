@@ -1,24 +1,19 @@
-class Burung {
-    String nama;
-    String jenis;
-}
+class Hitung {
+    int tambah(int a, int b) {
+        return a + b;
+    }
 
-class Hantu extends Burung{
-    String warna;
-
-    void deskripsi () {
-        System.out.println("Nama " + nama + "\nJenis " + jenis + "\nWarna " + warna);
+    int tambah (int a, int b, int c) {
+        return a + b - c;
     }
 }
 
+
 public class Main {
     public static void main (String[] args) {
-        Hantu a = new Hantu();
-        a.nama = "Beneben";
-        a.jenis = "burung hantu";
-        a.warna = "hitam";
-
-        a.deskripsi();
+        Hitung a = new Hitung();
+        System.out.println("Jumlahnya method 1 adalah " + a.tambah(10,4));
+        System.out.println("Jumlahnya method 2 adalah " + a.tambah(10,2,11));
     }
 
 }
