@@ -1,19 +1,17 @@
-class Hitung {
-    int tambah(int a, int b) {
-        return a + b;
-    }
+abstract class Tombol {
+    abstract void tekan();
+}
 
-    int tambah (int a, int b, int c) {
-        return a + b - c;
+class TombolLompat extends Tombol {
+    @Override
+    void tekan() {
+        System.out.println("Lompat");
     }
 }
 
-
 public class Main {
     public static void main (String[] args) {
-        Hitung a = new Hitung();
-        System.out.println("Jumlahnya method 1 adalah " + a.tambah(10,4));
-        System.out.println("Jumlahnya method 2 adalah " + a.tambah(10,2,11));
+        Tombol a = new TombolLompat();
+        a.tekan();
     }
-
 }
