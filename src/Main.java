@@ -1,18 +1,12 @@
 public class Main {
-    String merk;
-    String warna;
     int harga;
 
-    void brumbrum() {
-        System.out.println("Merk " + merk + "\nWarna " + warna + "\nHarga " + harga);
+    public Main() {
+        harga = 10;
     }
 
-    public static void main (String[] args){
+    public static void main (String[] args) {
         Main a = new Main();
-        a.merk = "honda";
-        a.warna = "biru";
-        a.harga = 2000000000;
-
-        a.brumbrum();
+        System.out.println(a.harga);
     }
 }
