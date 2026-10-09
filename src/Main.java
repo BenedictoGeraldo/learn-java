@@ -1,20 +1,24 @@
-class Mahasiswa {
-    private String nama;
+class Burung {
+    String nama;
+    String jenis;
+}
 
-    public String getNama() {
-        return nama;
-    }
+class Hantu extends Burung{
+    String warna;
 
-    public void setNama (String newNama) {
-        nama = newNama;
+    void deskripsi () {
+        System.out.println("Nama " + nama + "\nJenis " + jenis + "\nWarna " + warna);
     }
 }
 
 public class Main {
     public static void main (String[] args) {
-        Mahasiswa a = new Mahasiswa();
-        a.setNama("Benedicto");
+        Hantu a = new Hantu();
+        a.nama = "Beneben";
+        a.jenis = "burung hantu";
+        a.warna = "hitam";
 
-        System.out.println(a.getNama());
+        a.deskripsi();
     }
+
 }
