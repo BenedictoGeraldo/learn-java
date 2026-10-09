@@ -1,17 +1,17 @@
-interface Tombol {
-    void tekan();
-}
-
-class TombolLompat implements Tombol {
-    @Override
-    public void tekan() {
-        System.out.println("Lompat");
-    }
-}
-
 public class Main {
+    public static void cekUmur (int umur) {
+        if (umur < 17) {
+            throw new ArithmeticException("Umur belum mencukupi");
+        } else {
+            System.out.println("Umur mencukupi");
+        }
+    }
+
     public static void main (String[] args) {
-        Tombol a = new TombolLompat();
-        a.tekan();
+        try {
+            cekUmur(90);
+        } catch (ArithmeticException e) {
+            System.out.println("Terjadi error: " + e.getMessage());
+        }
     }
 }
