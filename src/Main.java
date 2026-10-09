@@ -1,12 +1,20 @@
-public class Main {
-    int harga;
+class Buah {
+    private int harga;
 
-    public Main() {
-        harga = 10;
+    public int getHarga() {
+        return harga;
     }
 
+    public void setHarga (int newHarga) {
+        harga = newHarga;
+    }
+}
+
+public class Main {
     public static void main (String[] args) {
-        Main a = new Main();
+        Buah a = new Buah();
+        a.harga = 10;
+
         System.out.println(a.harga);
     }
 }
