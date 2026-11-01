@@ -1,11 +1,22 @@
+//Learn encapsulation
+
+class Pesawat {
+    private int kecepatan = 0;
+
+    public void gas () {
+        this.kecepatan += 10;
+    }
+
+    public int getKecepatan() {
+        return this.kecepatan;
+    }
+}
+
 public class Main {
     public static void main (String[] args) {
-        int semester = 3;
+        Pesawat pesawat = new Pesawat();
+        pesawat.gas();
 
-        if (semester < 8) {
-            System.out.print("bukan mahasiswa akhir");
-        } else {
-            System.out.println("Mahasiswa akhir");
-        }
+        System.out.println("Kecepatan Pesawat ini: " + pesawat.getKecepatan());
     }
 }
