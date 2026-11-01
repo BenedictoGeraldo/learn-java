@@ -1,22 +1,13 @@
-//Learn encapsulation
+import java.util.ArrayList;
+import java.util.Collection;
 
-class Pesawat {
-    private int kecepatan = 0;
-
-    public void gas () {
-        this.kecepatan += 10;
-    }
-
-    public int getKecepatan() {
-        return this.kecepatan;
-    }
-}
-
-public class Main {
+public class Main{
     public static void main (String[] args) {
-        Pesawat pesawat = new Pesawat();
-        pesawat.gas();
+        Collection<String> wadah = new ArrayList<>();
+        wadah.add("Laptop");
+        wadah.add("Buku");
+        wadah.add("pensil");
 
-        System.out.println("Kecepatan Pesawat ini: " + pesawat.getKecepatan());
+        System.out.print(wadah);
     }
 }
