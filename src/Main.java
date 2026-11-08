@@ -1,13 +1,13 @@
-import java.util.ArrayList;
-import java.util.Collection;
-
-public class Main{
+public class Main {
     public static void main (String[] args) {
-        Collection<String> wadah = new ArrayList<>();
-        wadah.add("Laptop");
-        wadah.add("Buku");
-        wadah.add("pensil");
+        int bintang = 6;
 
-        System.out.print(wadah);
+        if (bintang <= 5) {
+            System.out.println("masih sedikit");
+        } else if (bintang <= 8) {
+            System.out.println("Sedang");
+        } else {
+            System.out.println("nilai tinggi");
+        }
     }
 }
